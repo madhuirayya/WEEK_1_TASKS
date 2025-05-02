@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav with Text</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: orange;
+            padding-top: 20px;
+            transition: width 0.3s;
+        }
+
+        .sidenav a {
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            transition: width 0.3s, padding 0.3s;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .green { background-color: #4CAF50; }
+        .blue { background-color: #2196F3; }
+        .red { background-color: #f44336; }
+        .gray { background-color: #555; }
+
+        .sidenav a:hover {
+            width: 200px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+        }
+
+        .sidenav a span {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .sidenav a:hover span {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .main {
+            margin-left: 80px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#" class="green"><span>Home</span></a>
+    <a href="#" class="blue"><span>About</span></a>
+    <a href="#" class="red"><span>Contact</span></a>
+    <a href="#" class="gray"><span>Services</span></a>
+</div>
+
+<div class="main">
+    <h2>Hoverable Sidenav with Text</h2>
+    <p>Hover over the buttons in the left side navigation to see more details.</p>
+</div>
+
+</body>
+</html>

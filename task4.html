@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stylized Table and Shapes</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 5px;
+            background-color: lightblue;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        th, td {
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+        }
+
+        .shapes {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .box {
+            width: 100px;
+            height: 60px;
+            border: 3px solid #8BC34A;
+        }
+
+        .box1 { border-radius: 0; }
+        .box2 { border-radius: 10px; }
+        .box3 { border-radius: 20px; }
+        .box4 { border-radius: 5px; }
+        .box5 { border-radius: 15px; }
+        .box6 { border-radius: 25px; }
+        .box7 { border-radius: 50%; }  /* Oval */
+        .box8 { border-radius: 8px; }
+        .box9 { border-radius: 30px; }
+    </style>
+</head>
+<body>
+
+    <!-- Table Section -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <!-- Shapes Section -->
+    <div class="shapes">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+
+</body>
+</html>
